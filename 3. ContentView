@@ -1,0 +1,19 @@
+import SwiftUI
+
+struct ContentView: View {                                              // The struct declaration 
+    var body: some View {                                               // The variable body declaration
+            Text("Hello, world!")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+// The ContentView struct is conforming to a View protocol. Views are very important to SwiftUI. 
+// The View protocol means the struct has to have a body property. (A property is a variable declared inside the struct.)
+// The body has belong to the some View protocol. 
+// Whatever is inside the body brackets is what the user is going to see, when the ContentView is called. 
+// Text() is the most basic view there is. Whatever string you put in there will be displayed on the screen. In this case Hello World would be displayed.
