@@ -1,0 +1,20 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+            Text("Coding is fun.")
+            .foregroundColor(.white)
+            .font(.custom("Optima", size: 30))
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {                // This doesn't do anything to your app from the point of view of a user. 
+    static var previews: some View {
+        ContentView()                                         // ContentView() is shown in the canvas in Xcode, so the programming can see his changes.
+            .background(.blue)                                // Here I have added a modifier so the view's background looks blue in the canvas. 
+    }
+}
+
+// There are many ways for you to manipulate the canvas with this preview. 
+// You can add Views to display multiples views in the canvas. They can be of the same view or different views. 
+// You can add different modifiers to each view in the previews. 
