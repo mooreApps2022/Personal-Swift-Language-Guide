@@ -1,0 +1,9 @@
+// At the top of every swift file is usually an import statement. Such as the one below. 
+
+import SwiftUI 
+
+// This is telling the Xcode compiler to treat your code in a particular way, the SwiftUI way. In Swift, there are many frameworks to use. To list a few. 
+
+// Fondation, UIKit, CoreData, MapKit
+
+// here is a link to Apples available frameworks: https://developer.apple.com/documentation/technologies
