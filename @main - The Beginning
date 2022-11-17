@@ -1,0 +1,17 @@
+// This is the file where you code begins. 
+
+import SwiftUI                              // Here Xcode now knows to add all the code that will treat the program like a SwiftUI program
+
+@main                                       // @main is the entrypoint. The compiler begins reading here. 
+struct NameOfApp: App {                     // This is all boilerplate codes that is add automatically to your programe when you create a new file. 
+    var body: some Scene {
+        WindowGroup {
+          ContentView()                     // This is only bit you might want to change. 
+                                               This is the View the user will see first when they first start up the app. 
+        }
+    }
+}
+
+
+
+// Whatever you have typed into that ContentView.swift file is what the user first see. 
