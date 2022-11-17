@@ -9,3 +9,5 @@ I used too many resources to list, but the best resources I recommend, are the f
 I also recommend the books Code: The Hidden Language of Computer Hardware and Software by Charles Petzold and The Universal Computer by Martin Davis. Code will teach you how computers work and The Universal Computer will give you an overview of how formal logic turned into programming languages and about all the incredible people who made it happen. 
 
 I'm currently working on my next app and I wanted to built this repo to sum up all the things I'm learn. It's basically my own personal language guide written in a accessible way, to not only further my own understand, but maybe help out anyone else learning Swift. 
+
+My goal is to just upload a few files a day, each one explaining one simple idea about Swift, SwiftUI, Design patterns, and actually employ classic data structures and algorithms in SwiftUI or anything else I find interesting. 
