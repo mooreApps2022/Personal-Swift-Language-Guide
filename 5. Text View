@@ -1,0 +1,24 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+            Text("Coding is fun.")
+            .foregroundColor(.white)
+            .font(.custom("Optima", size: 30))                 
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .background(.blue)
+    }
+}
+
+// The Text View is as simple as it gets in SwiftUI. 
+// Text() is the view. Whatever string you pass in the () will be displayed on the screen. 
+// There have been added two modifiers to this Text view. 
+// .foregroundColor(.white) will change the color of the text from the default black to white. 
+// .font() is a modifer for changing the font, by passing in the .custom modifier you can change the font, and the size. 
+// the first paramenter in the .custom modifier will pass the name of the font you want to use 
+// Go here for the list of availible fonts:   https://developer.apple.com/fonts/system-fonts/ 
