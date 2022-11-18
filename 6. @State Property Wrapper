@@ -1,0 +1,28 @@
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State private var myText: String = "Welcome to the Internet"               // These are three View Properties with @State property wrappers
+    @State private var myColor: Color = .green                                  // Whatever these values are assigned too, will display in the View
+    @State private var myInt: Double = 35                                       // They have to be outside the body property 
+    
+    
+    var body: some View {
+            Text(myText)                                                        // Here the View shows the value of the View Properties
+            .foregroundColor(myColor)                                           
+            .font(.custom("Optima", size: myInt))
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+
+
+// Properties at important to SwiftUI. 
+// If a view's property changes the view will change. 
+// @State is property wrapper, meaning this variable will act different.
+// @State properties are how you will get your app to change during runtime; if the properties changes, the view changes. 
