@@ -1,0 +1,49 @@
+import Foundation
+
+/*
+ This increment func will call itself infinitely
+ */
+
+//func increment(index: Int) {
+//    increment(index: index)
+//}
+//
+//increment(index: 0)
+
+/*
+ Recursive Functions need a Base case and a Recursive case
+ 
+ Base case - this case ends the recursion
+ 
+ 
+ Recursive case - this case calls the function recursively
+ */
+
+
+func factorial(_ number: Int) -> Int {
+    
+    // Base case
+    if number == 0 {
+        return 1
+    }
+    
+    // Recursive case
+    return number * factorial(number - 1)
+    
+}
+
+let result = factorial(10)
+print(result)
+
+
+func power(number: Int, x: Int) -> Int {
+    // base case
+    if x == 0 {
+        return 1
+    } else {
+        return number * power(number: number, x: x - 1)
+    }
+}
+
+let cube = power(number: 10, x: 6)
+print(cube)
