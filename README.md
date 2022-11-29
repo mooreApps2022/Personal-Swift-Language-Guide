@@ -10,4 +10,4 @@ I also recommend the books Code: The Hidden Language of Computer Hardware and So
 
 I'm currently working on my next app and I wanted to built this repo to sum up all the things I'm learn. It's basically my own personal language guide written in a accessible way, to not only further my own understand, but maybe help out anyone else learning Swift. 
 
-My goal is to just upload a few files a day, each one explaining one simple idea about Swift, SwiftUI, Design patterns, and actually employ classic data structures and algorithms in SwiftUI or anything else I find interesting. 
+My goal is to explain what I learn about Swift, SwiftUI, Design patterns, and actually employ classic data structures and algorithms in SwiftUI or anything else I find interesting. 
