@@ -1,0 +1,22 @@
+import UIKit
+
+/*
+ Constant time complexity - this operation will always take the same amount of time, no matter how big the data set is.
+ 
+ In this example the first method always checks the first element in the array. There will only ever be one first element.
+ */
+
+func checkFirst(names: [String]) {
+    if let first = names.first {
+        print(first)
+    } else {
+        print("No names, my man")
+    }
+}
+
+var myArray: [String] = []
+
+checkFirst(names: myArray)
+
+myArray.append("Skyy")
+checkFirst(names: myArray)
