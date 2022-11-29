@@ -1,0 +1,48 @@
+import Foundation
+
+// Last in first out
+
+struct Stack<Element> {
+    
+    private var storage: [Element] = []
+    
+    init() {}
+    
+    
+    mutating func push(_ element: Element) {
+        storage.append(element)
+    }
+    
+    mutating func pop() -> Element? {
+        return storage.popLast()
+    }
+    
+}
+
+extension Stack : CustomStringConvertible {
+    
+    var description: String {
+        
+        let topDivider = "______top______\n"
+        let bottomDivider = "\n_____________"
+        
+        let stackElement = storage.map {
+            "\($0)"
+        }.reversed().joined(separator: "\n")
+        return topDivider + stackElement + bottomDivider
+    }
+    
+}
+
+var stack = Stack<Int>()
+stack.push(20)
+stack.push(3)
+stack.push(67)
+stack.push(44)
+
+print("Before popping")
+print(stack)
+
+print("After popping")
+stack.pop()
+print(stack)
