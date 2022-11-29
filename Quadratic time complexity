@@ -1,0 +1,19 @@
+import Foundation
+
+/*
+ Quadratic time complexity - the function runs same the number of elements in the array, but squared.
+ 
+ In this example, the array has 8 elements. It will thus perform the function 8 * 8 times, which equals 64 times. If the array had 10 elements, it would perform the operation 100 times
+ */
+
+func printNames(names: [String]) {
+    for _ in names {
+        for name in names {
+            print(name)
+        }
+    }
+}
+
+var z3Array: [String] = ["0n3","7w0","7hr33","f0ur","fiv3","six","s3v3n","3igh7"]
+
+printNames(names: z3Array)
